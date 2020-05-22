@@ -23,6 +23,7 @@ public class JDBCTest {
             String sql = "select * from tb_user where id=?";
             prepareStatement = connection.prepareStatement(sql);
             // 设置参数
+            String a="s444";
             prepareStatement.setInt(1, 4);
             // 执行查询
             rs = prepareStatement.executeQuery();
